@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Custom PCs - PCFY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="Comp 1.gif" alt="Animated Logo" class="logo">
+            </a>
+            
+            <!-- Navigation with login icon -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="custom-pcs.html">Custom PCs</a></li>
+                    <li><a href="repair-services.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="#" class="login-icon">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner custom-pc-hero">
+        <div class="hero-overlay"></div>
+        <div class="banner-content">
+            <h1 class="banner-title animate-text">Custom PC Builds</h1>
+            <p class="banner-subtitle animate-text">Tailor-made computers designed for your specific needs and budget</p>
+            <div class="hero-cta">
+                <a href="#specs" class="btn btn-glow">Explore Builds</a>
+            </div>
+        </div>
+        <div class="floating-icons">
+            <div class="floating-icon"><i class="fas fa-microchip"></i></div>
+            <div class="floating-icon"><i class="fas fa-memory"></i></div>
+            <div class="floating-icon"><i class="fas fa-tv"></i></div>
+            <div class="floating-icon"><i class="fas fa-hdd"></i></div>
+            <div class="floating-icon"><i class="fas fa-fan"></i></div>
+        </div>
+    </section>
+
+    <main>
+        <!-- PC Tiers Section -->
+        <section class="pc-tiers">
+            <div class="container">
+                <h2 class="section-title">Custom PCs</h2>
+                
+                <!-- Simple Carousel -->
+                <div class="simple-carousel">
+                    <!-- Carousel Navigation -->
+                    <button class="simple-carousel-button prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    
+                    <!-- Carousel Slides Container -->
+                    <div class="simple-carousel-container">
+                        <!-- Entry Level PC -->
+                        <div class="simple-carousel-slide active">
+                            <div class="tier-card">
+                                <div class="tier-image">
+                                    <img src="pc1.png" alt="Entry Level Gaming PC" onerror="this.src='images/placeholder.jpg'">
+                                    <div class="tier-badge">Entry</div>
+                                </div>
+                                <div class="tier-details">
+                                    <h3>Entry Level Gaming PC</h3>
+                                    <p>Perfect for casual gamers and esports titles. Great performance at 1080p resolution.</p>
+                                    <div class="tier-features">
+                                        <div class="feature"><i class="fas fa-microchip"></i> Intel i5 / Ryzen 5</div>
+                                        <div class="feature"><i class="fas fa-memory"></i> 16GB RAM</div>
+                                        <div class="feature"><i class="fas fa-tv"></i> RTX 2080</div>
+                                    </div>
+                                    <p class="tier-price">Starting at €699</p>
+                                    <a href="#specs" class="btn btn-primary">View Specifications</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mid Range PC -->
+                        <div class="simple-carousel-slide">
+                            <div class="tier-card">
+                                <div class="tier-image">
+                                    <img src="pc2.png" alt="Mid Range Gaming PC" onerror="this.src='images/placeholder.jpg'">
+                                    <div class="tier-badge">Mid</div>
+                                </div>
+                                <div class="tier-details">
+                                    <h3>Mid Range Gaming PC</h3>
+                                    <p>Excellent 1440p gaming performance. Handle most modern games with high settings.</p>
+                                    <div class="tier-features">
+                                        <div class="feature"><i class="fas fa-microchip"></i> Intel i7 / Ryzen 7</div>
+                                        <div class="feature"><i class="fas fa-memory"></i> 32GB RAM</div>
+                                        <div class="feature"><i class="fas fa-tv"></i> RTX 4070</div>
+                                    </div>
+                                    <p class="tier-price">Starting at €1,099</p>
+                                    <a href="#specs" class="btn btn-primary">View Specifications</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- High End PC -->
+                        <div class="simple-carousel-slide">
+                            <div class="tier-card">
+                                <div class="tier-image">
+                                    <img src="pc3.png" alt="High End Gaming PC" onerror="this.src='images/placeholder.jpg'">
+                                    <div class="tier-badge">Premium</div>
+                                </div>
+                                <div class="tier-details">
+                                    <h3>High End Gaming PC</h3>
+                                    <p>Uncompromising 4K gaming performance. The ultimate gaming experience with no limitations.</p>
+                                    <div class="tier-features">
+                                        <div class="feature"><i class="fas fa-microchip"></i> Intel i9 / Ryzen 9</div>
+                                        <div class="feature"><i class="fas fa-memory"></i> 64GB RAM</div>
+                                        <div class="feature"><i class="fas fa-tv"></i> RTX 5080</div>
+                                    </div>
+                                    <p class="tier-price">Starting at €2,000</p>
+                                    <a href="#specs" class="btn btn-primary">View Specifications</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Next Button -->
+                    <button class="simple-carousel-button next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <!-- Carousel Indicators -->
+                <div class="simple-carousel-indicators">
+                    <button class="simple-indicator active" data-slide="0"></button>
+                    <button class="simple-indicator" data-slide="1"></button>
+                    <button class="simple-indicator" data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section id="specs" class="specs-section">
+            <div class="container">
+                <h2 class="section-title">Specifications Comparison</h2>
+                <p class="section-description" style="text-align: center; margin-bottom: 2rem; color: var(--gray);">
+                    Note: The following specifications are examples only. Contact us for the most current configurations and options available.
+                </p>
+                
+                <div class="specs-container">
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3>Processor</h3>
+                            <div class="spec-comparison">
+                                <div class="spec-tier entry">
+                                    <div class="spec-tier-label">Entry</div>
+                                    <p>Intel Core i5-13400F / AMD Ryzen 5 7600X</p>
+                                </div>
+                                <div class="spec-tier mid">
+                                    <div class="spec-tier-label">Mid</div>
+                                    <p>Intel Core i7-13700K / AMD Ryzen 7 7800X3D</p>
+                                </div>
+                                <div class="spec-tier high">
+                                    <div class="spec-tier-label">Premium</div>
+                                    <p>Intel Core i9-13900K / AMD Ryzen 9 7950X</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3>Memory</h3>
+                            <div class="spec-comparison">
+                                <div class="spec-tier entry">
+                                    <div class="spec-tier-label">Entry</div>
+                                    <p>16GB DDR4-3200MHz / DDR5-4800MHz</p>
+                                </div>
+                                <div class="spec-tier mid">
+                                    <div class="spec-tier-label">Mid</div>
+                                    <p>32GB DDR5-5600MHz</p>
+                                </div>
+                                <div class="spec-tier high">
+                                    <div class="spec-tier-label">Premium</div>
+                                    <p>64GB DDR5-6000MHz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3>Graphics Card</h3>
+                            <div class="spec-comparison">
+                                <div class="spec-tier entry">
+                                    <div class="spec-tier-label">Entry</div>
+                                    <p>NVIDIA RTX 3060 / AMD RX 6600 XT</p>
+                                </div>
+                                <div class="spec-tier mid">
+                                    <div class="spec-tier-label">Mid</div>
+                                    <p>NVIDIA RTX 4070 / AMD RX 7700 XT</p>
+                                </div>
+                                <div class="spec-tier high">
+                                    <div class="spec-tier-label">Premium</div>
+                                    <p>NVIDIA RTX 4090 / AMD RX 7900 XTX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3>Storage</h3>
+                            <div class="spec-comparison">
+                                <div class="spec-tier entry">
+                                    <div class="spec-tier-label">Entry</div>
+                                    <p>1TB NVMe SSD</p>
+                                </div>
+                                <div class="spec-tier mid">
+                                    <div class="spec-tier-label">Mid</div>
+                                    <p>2TB NVMe SSD</p>
+                                </div>
+                                <div class="spec-tier high">
+                                    <div class="spec-tier-label">Premium</div>
+                                    <p>4TB NVMe SSD + 4TB HDD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-fan"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3>Cooling</h3>
+                            <div class="spec-comparison">
+                                <div class="spec-tier entry">
+                                    <div class="spec-tier-label">Entry</div>
+                                    <p>Air Cooling</p>
+                                </div>
+                                <div class="spec-tier mid">
+                                    <div class="spec-tier-label">Mid</div>
+                                    <p>240mm AIO Liquid Cooling</p>
+                                </div>
+                                <div class="spec-tier high">
+                                    <div class="spec-tier-label">Premium</div>
+                                    <p>360mm AIO Liquid Cooling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="custom-request">
+                    <div class="glow-border"></div>
+                    <h3>Want a Custom Configuration?</h3>
+                    <p>Contact us to discuss your specific requirements and we'll build the perfect PC for your needs.</p>
+                    <a href="mailto:pcfy.galway@gmail.com" class="btn btn-glow">Request Custom Build</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 085 863 9422</p>
+                    <p><i class="fas fa-envelope"></i> pcfy.galway@gmail.com</p>
+                    <p><i class="fas fa-location-dot"></i> Galway City</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="custom-pcs.html">Custom Builds</a></li>
+                        <li><a href="repair-services.html">Repair Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PCFY. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Simple Carousel JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.simple-carousel-slide');
+            const prevButton = document.querySelector('.simple-carousel-button.prev');
+            const nextButton = document.querySelector('.simple-carousel-button.next');
+            const indicators = document.querySelectorAll('.simple-indicator');
+            
+            let currentSlide = 0;
+            
+            // Initialize the carousel
+            function initCarousel() {
+                slides[currentSlide].classList.add('active');
+                indicators[currentSlide].classList.add('active');
+                console.log(`Carousel initialized with ${slides.length} slides`);
+            }
+            
+            // Show a specific slide
+            function showSlide(index) {
+                // Remove active class from all slides and indicators
+                slides.forEach(slide => slide.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                // Add active class to current slide and indicator
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                
+                currentSlide = index;
+                console.log(`Showing slide ${currentSlide + 1} of ${slides.length}`);
+            }
+            
+            // Event listeners for buttons
+            if (prevButton) {
+                prevButton.addEventListener('click', function() {
+                    let newIndex = currentSlide - 1;
+                    if (newIndex < 0) newIndex = slides.length - 1;
+                    showSlide(newIndex);
+                });
+            }
+            
+            if (nextButton) {
+                nextButton.addEventListener('click', function() {
+                    let newIndex = currentSlide + 1;
+                    if (newIndex >= slides.length) newIndex = 0;
+                    showSlide(newIndex);
+                });
+            }
+            
+            // Event listeners for indicators
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    showSlide(index);
+                });
+            });
+            
+            // Initialize the carousel
+            initCarousel();
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shop - PCFY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="Comp 1.gif" alt="Animated Logo" class="logo">
+            </a>
+            
+            <!-- Navigation with login icon -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="custom-pcs.html">Custom PCs</a></li>
+                    <li><a href="repair-services.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="#" class="login-icon">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Categories -->
+        <section id="shop-categories" class="product-categories">
+            <div class="container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="components">Components</button>
+                    <button class="filter-btn" data-filter="peripherals">Peripherals</button>
+                    <button class="filter-btn" data-filter="accessories">Accessories</button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid">
+                    <!-- Components -->
+                    <div class="product-card" data-category="components">
+                        <div class="product-badge">Popular</div>
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="CPU">
+                        </div>
+                        <div class="product-details">
+                            <h3>Intel Core i7-13700K</h3>
+                            <p class="product-description">16-Core (8P+8E) Desktop Processor</p>
+                            <div class="product-meta">
+                                <span class="product-price">€419.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(42)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="components">
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="GPU">
+                        </div>
+                        <div class="product-details">
+                            <h3>NVIDIA RTX 4070</h3>
+                            <p class="product-description">12GB GDDR6X Graphics Card</p>
+                            <div class="product-meta">
+                                <span class="product-price">€649.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(37)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="components">
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="RAM">
+                        </div>
+                        <div class="product-details">
+                            <h3>Corsair Vengeance RGB 32GB</h3>
+                            <p class="product-description">DDR5-5600MHz Memory Kit (2x16GB)</p>
+                            <div class="product-meta">
+                                <span class="product-price">€189.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(28)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="components">
+                        <div class="product-badge">Sale</div>
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="SSD">
+                        </div>
+                        <div class="product-details">
+                            <h3>Samsung 980 PRO 2TB</h3>
+                            <p class="product-description">PCIe 4.0 NVMe SSD</p>
+                            <div class="product-meta">
+                                <span class="product-price">€229.99</span>
+                                <span class="product-old-price">€279.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(56)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Peripherals -->
+                    <div class="product-card" data-category="peripherals">
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="Monitor">
+                        </div>
+                        <div class="product-details">
+                            <h3>LG UltraGear 27GP850</h3>
+                            <p class="product-description">27" QHD 165Hz Gaming Monitor</p>
+                            <div class="product-meta">
+                                <span class="product-price">€399.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(63)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="peripherals">
+                        <div class="product-badge">New</div>
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="Keyboard">
+                        </div>
+                        <div class="product-details">
+                            <h3>Logitech G915 TKL</h3>
+                            <p class="product-description">Wireless RGB Mechanical Gaming Keyboard</p>
+                            <div class="product-meta">
+                                <span class="product-price">€199.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(41)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="peripherals">
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="Mouse">
+                        </div>
+                        <div class="product-details">
+                            <h3>Razer DeathAdder V3 Pro</h3>
+                            <p class="product-description">Wireless Gaming Mouse</p>
+                            <div class="product-meta">
+                                <span class="product-price">€149.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(52)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Accessories -->
+                    <div class="product-card" data-category="accessories">
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="Headset">
+                        </div>
+                        <div class="product-details">
+                            <h3>SteelSeries Arctis Nova Pro</h3>
+                            <p class="product-description">Wireless Gaming Headset</p>
+                            <div class="product-meta">
+                                <span class="product-price">€349.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(38)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories">
+                        <div class="product-badge">Sale</div>
+                        <div class="product-image">
+                            <img src="images/placeholder.jpg" alt="Mousepad">
+                        </div>
+                        <div class="product-details">
+                            <h3>Corsair MM700 RGB</h3>
+                            <p class="product-description">Extended Gaming Mouse Pad</p>
+                            <div class="product-meta">
+                                <span class="product-price">€49.99</span>
+                                <span class="product-old-price">€69.99</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(24)</span>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button class="btn btn-secondary">Load More Products</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 085 863 9422</p>
+                    <p><i class="fas fa-envelope"></i> pcfy.galway@gmail.com</p>
+                    <p><i class="fas fa-location-dot"></i> Galway City</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="custom-pcs.html">Custom Builds</a></li>
+                        <li><a href="repair-services.html">Repair Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PCFY. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Product Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        if (filterBtns.length > 0 && productCards.length > 0) {
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide products based on filter
+                    productCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+</body>
+</html> 
