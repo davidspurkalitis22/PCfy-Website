@@ -1,0 +1,58 @@
+DATABASE TRANSFER INSTRUCTIONS
+============================
+
+1. EXPORT LOCAL DATABASE
+-------------------------
+a) Run the 'export_db.bat' file by double-clicking it
+b) When prompted, enter your local MySQL root password
+c) The database will be exported to 'pcfy_database_backup.sql' in your project folder
+
+2. PREPARE YOUR CPANEL DATABASE
+-------------------------------
+a) Log in to your cPanel account
+b) Navigate to MySQL Databases
+c) Create a new database called "vflxfuj_pcfy" (or other name if you prefer)
+d) Create a new database user (e.g., "vflxfuj_admin")
+e) Assign a secure password for this user
+f) Add the user to the database with ALL PRIVILEGES
+
+3. UPLOAD FILES TO CPANEL
+-------------------------
+a) Upload your entire website files to cPanel (via FTP or File Manager)
+b) Make sure to upload the 'pcfy_database_backup.sql' file
+c) Also upload 'import_db.php' file to help with the import
+
+4. IMPORT DATABASE ON CPANEL
+----------------------------
+a) Open your browser and navigate to: https://yourdomain.com/import_db.php
+b) The script will automatically import the database
+c) If you encounter any errors, check the error messages for guidance
+
+5. UPDATE CONFIG FILE IF NEEDED
+-------------------------------
+a) If you used different database credentials on cPanel, edit the 'config.php' file
+b) Update the database host, username, password and database name
+
+6. VERIFY WEBSITE FUNCTIONALITY
+-------------------------------
+a) Visit your website and test all functionalities
+b) Pay special attention to:
+   - User login and registration
+   - Product listings
+   - Cart and checkout process
+   - Order management
+   - Any other critical features
+
+7. TROUBLESHOOTING
+------------------
+- If you get database connection errors, double-check your config.php settings
+- Ensure the database user has the correct permissions
+- Check that all tables were properly imported using check_db.php
+- If specific features don't work, look at the PHP error logs for more details
+
+8. SECURITY RECOMMENDATIONS
+---------------------------
+- Delete the import_db.php file after successful import
+- Delete the pcfy_database_backup.sql file after successful import
+- Make sure your database password is strong and secure
+- Consider enabling SSL for your website if handling sensitive data 
