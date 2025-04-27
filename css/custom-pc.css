@@ -1,0 +1,190 @@
+/* Custom PC Builder Styles */
+.pc-builder-section {
+    padding: 4rem 0;
+    background-color: #f8f8f8;
+}
+
+.pc-builder-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.builder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.builder-component {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.builder-component:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.component-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.component-header i {
+    font-size: 1.5rem;
+    color: #00CCF5; /* Primary color */
+}
+
+.component-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #0A0A0A; /* Dark color */
+}
+
+.component-selection select {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 0.95rem;
+    color: #0A0A0A; /* Dark color */
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.customer-info {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.customer-info h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #0A0A0A; /* Dark color */
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.price-estimate {
+    background-color: #00CCF5; /* Primary color */
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.price-estimate h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.price-note {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+.compatibility-warning {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Form inputs */
+.customer-info input[type="text"],
+.customer-info input[type="email"],
+.customer-info input[type="tel"],
+.customer-info textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 0.95rem;
+    color: #0A0A0A;
+    transition: border-color 0.3s ease;
+}
+
+.customer-info input[type="text"]:focus,
+.customer-info input[type="email"]:focus,
+.customer-info input[type="tel"]:focus,
+.customer-info textarea:focus {
+    border-color: #00CCF5;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 204, 245, 0.2);
+}
+
+.customer-info label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #0A0A0A;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .builder-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pc-builder-form {
+        padding: 1.5rem;
+    }
+    
+    .component-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .price-estimate h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .pc-builder-form {
+        padding: 1rem;
+    }
+    
+    .builder-component {
+        padding: 1rem;
+    }
+    
+    .component-header i {
+        font-size: 1.3rem;
+    }
+    
+    .component-header h3 {
+        font-size: 1.1rem;
+    }
+} 
